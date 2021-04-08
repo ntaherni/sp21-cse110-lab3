@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang=”en”>
+
+<head>
+    <title>Nicholas Tahernia's Journal.</title>
+    <meta name="author" content="Nicholas Tahernia">
+    <meta name="description" content="Nicholas Tahernia's Journal for Lab 2.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png"
+        href="https://cdn3.iconfinder.com/data/icons/glypho-social-and-other-logos/64/logo-amazon-512.png">
+</head>
+<body>
+    <main>
+        <header><span>My Somewhat Eventful Last Few Days.</span></header>
+        <nav class="journals">
+            <ol>
+                <li><a href="#Journal1">Journal 1</a></li>
+                <li><a href="#Journal2">Journal 2</a></li>
+                <li><a href="#Journal3">Journal 3</a></li>
+            </ol>
+        </nav>
+        <hr>
+        <div>
+            <section>
+                <details>
+                    <summary>Journal 1</summary>
+                    <h1 id="Journal1">Journal 1</h1>
+                    <p>The day is Sunday, April 4th. Today is Easter. I woke up around 9 in the
+                        morning and proceeded to do some <em>homework for one of my classes</em>, I forget
+                        exactly which class, but I remember <strong>doing the work</strong>. I also read a book,
+                        <i>The Colorless Tsukuru Tazaki and His Years of Pilgrimage</i> by <b>Haruki Murakami</b>,
+                        one of my favorite authors.<br>
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/81++DiPFJ1L.jpg" alt="Book cover"
+                            width="500" height="800">
+                        <br>
+                        If you have any interest in getting the book you can find it <a
+                            href="https://www.amazon.com/Colorless-Tsukuru-Tazaki-Years-Pilgrimage/dp/0804170126">here.</a>
+                        Overall I would say my classload this quarter is manageable. The classes I am taking are:
+                    <ul>
+                        <li>CSE 110</li>
+                        <li>CSE 140</li>
+                        <li>CSE 141L</li>
+                        <li>MATH 170B</li>
+                    </ul>
+                    After doing the homework I remember having lunch then watching sports in the afternoon.
+                    After watching sports I remembered it was around dinner time, so I went back to my room
+                    to get dressed for our Easter dinner. My family decided not to do Easter brunch which is
+                    the typical thing to do and instead just have an Easter dinner which was nice. After that
+                    I went to read more, and called my girlfriend at night before going to bed.
+                    </p>
+                </details>
+            </section>
+            <hr>
+            <section>
+                <details>
+                    <summary>Journal 2</summary>
+                    <h2 id="Journal2">Journal 2</h2>
+                    <p>The day is Monday, April 5th. Today I had to drive back to San Diego from Palm Desert, so as
+                        soon as I woke up around 9 or 10 A.M. I packed up and left. On the way home, I listened to a
+                        song my girlfriend showed me a few days ago multiple times. The song is in a mix of Mandarin
+                        and English, here is the song:
+                        <br>
+                        <audio controls>
+                            <source src="https://www.mboxdrive.com/Capper - 无人区玫瑰 OFFICIAL MV.mp3" type="audio/mpeg">
+                            Your browser does not support the audio tag.
+                        </audio>
+                        <br>
+                        I got to San Diego around 12:30 or 1 P.M. so I still had time to spare before my class at 2 P.M.
+                        I set up the CloudLabs software for CSE 140L, which I plan to use for my lab later this week.
+                        Then I had two classes, CSE 140L and MATH 170B, which kept me busy during the afternoon. After I
+                        attended class I worked out for a bit, then I had dinner and continued reading like the previous
+                        night. After I read I called my girlfriend, where she showed me the music video and explained
+                        the
+                        lyrics of the song by directly translating them. The music video is here:
+                        <br>
+                        <video width="320" height="240" controls>
+                            <source src="musicvideo.mp4" type="video/mp4">
+                        </video>
+                        <br>
+                        After this I went to bed.
+                    </p>
+                </details>
+            </section>
+            <hr>
+            <section>
+                <details>
+                    <summary>Journal 3</summary>
+                    <h3 id="Journal3">Journal 3</h3>
+                    <p>On Tuesday, April 7th, I woke up and read more before my class, CSE 140, at 12:30 P.M. I also set
+                        up
+                        my group Slack and introductions, etc. since I was chosen as a leader for group 5. Then I went
+                        to class, taking notes as it went on. After class, I planned to get a haircut so I went and got
+                        a
+                        haircut nearby. On the way home from the haircut my car was low on gas so I got some more, and I
+                        also got boba on the way home too. When I got home it was around 3:45 P.M., right before CSE 110
+                        began, so I sat down and watched the lecture as it went on. After the lecture I went to play
+                        tennis
+                        nearby until 6:30, at which point I got dinner and ate. After eating I kept reading the book,
+                        eventually finishing it. After I finished it I called my girlfriend again and we talked for a
+                        while
+                        about the book, since she had read it in the past and recommended it to me. After that I went to
+                        sleep.
+                    </p>
+                </details>
+            </section>
+        </div>
+        <hr>
+        <form>
+            <fieldset>
+                <p>To make a new entry please fill out this form:</p>
+                <input type="checkbox" id="goodday" name="goodday" value="good">
+                <label for="goodday">Did you have a good day?</label><br>
+                <p>Which day are you writing this entry on?</p>
+                <input type="radio" id="current" name="date" value="today">
+                <label for="current">Today.</label><br>
+                <input type="radio" id="future" name="date" value="future">
+                <label for="future">After the current day.</label><br>
+                <label for="entry">Please enter where you are writing this entry from:</label>
+                <input type="text" id="entry" name="entry"><br>
+                <label for="calendar">Today's date:</label>
+                <input type="date" id="calendar" name="calendar"><br>
+                <label for="new">Write your new entry here:</label><br>
+                <textarea id="new" name="new" rows="10" cols="150">
+Type your entry.
+                </textarea>
+                <br>
+                <label for="day">Choose which day of the week it is:</label>
+                <input name="day" list="days">
+                <datalist id="days">
+                <option value="Monday">
+                <option value="Tuesday">
+                <option value="Wednesday">
+                <option value="Thursday">
+                <option value="Friday">
+                <option value="Saturday">
+                <option value="Sunday">
+                </datalist>
+                <br>
+                <label for="books">Which book did you read today?</label>
+                <select name="books" id="books">
+                <option value="murakami">The Colorless Tsukuru Tazaki and his Years of Pilgrimage</option>
+                <option value="dune">Dune</option>
+                <option value="1Q84">1Q84</option>
+                <option value="slaughterhouse-five">Slaughterhouse Five</option>
+                </select>
+                <br>
+                <button type="button">Click to release stress.</button>
+                <br>
+                <input type="submit">
+            </fieldset>
+        </form>
+        <footer>Thank you for your journal submission.</footer>
+    </main>
+</body>
+
+</html>
