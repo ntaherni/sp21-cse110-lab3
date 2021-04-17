@@ -1,6 +1,7 @@
 @font-face {
     font-family: downloaded;
     src: url(OrelegaOne-Regular.ttf);
+    /* Adding downloaded font */
   }
 
 body {
@@ -63,10 +64,12 @@ footer {
 
   button:hover {
     color: goldenrod;
+    /* Now buttons turn yellow when hovered */
   }
 
   button:active {
       color: purple;
+    /* Now buttons turn purple when hovered. */
   }
 
   .poll {
@@ -77,6 +80,7 @@ footer {
       flex-wrap: nowrap;
       flex-basis:0;
       align-items:center;
+      /* Added flex box for form at bottom */
   }
 
   .grid-container {
@@ -85,15 +89,17 @@ footer {
       padding: 10px;
       row-gap: 5px;
       justify-items: start;
+      /* Added grid for journal entries */
   }
 
   .gridcontainer > grid-item {
       display: inline;
+      /* Adding inline format to child in grid */
   }
 
   @media only screen and (max-width: 600px) {
     .appearance {
         display: inline;
-    
+    /* Media query to show for large screens */
     }
   }
