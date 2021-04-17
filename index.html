@@ -6,44 +6,56 @@
     <meta name="author" content="Nicholas Tahernia">
     <meta name="description" content="Nicholas Tahernia's Journal for Lab 2.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nicostyle.css">
     <link rel="icon" type="image/png"
         href="https://cdn3.iconfinder.com/data/icons/glypho-social-and-other-logos/64/logo-amazon-512.png">
 </head>
 <body>
+    <style>
+            p {
+                font-family: "Apple Chancery", cursive;
+            }
+            p.none {display: none};
+            p.inline {display: inline};
+    </style>
     <main>
-        <header><span>My Somewhat Eventful Last Few Days.</span></header>
+        <header id="cursive"><span>My Somewhat Eventful Last Few Days.</span></header>
         <nav class="journals">
-            <ol>
+            <ol style="font-size: 2em; font-family: Apple Chancery, cursive" class="journallist">
                 <li><a href="#Journal1">Journal 1</a></li>
                 <li><a href="#Journal2">Journal 2</a></li>
                 <li><a href="#Journal3">Journal 3</a></li>
             </ol>
         </nav>
-        <hr>
-        <div>
+        <hr style="height: 12px; border: 0; box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);">
+        <div class="grid-container">
+        <div class="grid item">
             <section>
                 <details>
-                    <summary>Journal 1</summary>
-                    <h1 id="Journal1">Journal 1</h1>
-                    <p>The day is Sunday, April 4th. Today is Easter. I woke up around 9 in the
+                    <summary class="summaries">Journal 1</summary>
+                    <h1 class="headers" id="Journal1">Journal 1</h1>
+                    <p class="block">The day is Sunday, April 4th. Today is Easter. I woke up around 9 in the
                         morning and proceeded to do some <em>homework for one of my classes</em>, I forget
                         exactly which class, but I remember <strong>doing the work</strong>. I also read a book,
                         <i>The Colorless Tsukuru Tazaki and His Years of Pilgrimage</i> by <b>Haruki Murakami</b>,
                         one of my favorite authors.<br>
                         </p>
                         <img src="https://images-na.ssl-images-amazon.com/images/I/81++DiPFJ1L.jpg" alt="Book cover"
-                            width="500" height="800">
+                            class="center" style="width:50%; height:50%; max-width:500px; max-height:800px;">
                         <br>
+                        <p class="inline">
                         If you have any interest in getting the book you can find it <a
                             href="https://www.amazon.com/Colorless-Tsukuru-Tazaki-Years-Pilgrimage/dp/0804170126">here.</a>
                         Overall I would say my classload this quarter is manageable. The classes I am taking are:
-                    <ul>
+                    </p>
+                    <p class ="none">This is a hidden message to test the display none feature.</p>
+                    <ul class="classlist">
                         <li>CSE 110</li>
                         <li>CSE 140</li>
                         <li>CSE 141L</li>
                         <li>MATH 170B</li>
                     </ul>
-                    <p>
+                    <p class="block">
                     After doing the homework I remember having lunch then watching sports in the afternoon.
                     After watching sports I remembered it was around dinner time, so I went back to my room
                     to get dressed for our Easter dinner. My family decided not to do Easter brunch which is
@@ -52,12 +64,14 @@
                     </p>
                 </details>
             </section>
-            <hr>
+            </div>
+            <div class="grid-item">
+            <hr style="height: 12px; border: 0; box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);">
             <section>
                 <details>
-                    <summary>Journal 2</summary>
-                    <h2 id="Journal2">Journal 2</h2>
-                    <p>The day is Monday, April 5th. Today I had to drive back to San Diego from Palm Desert, so as
+                    <summary class="summaries">Journal 2</summary>
+                    <h2 class="headers" id="Journal2">Journal 2</h2>
+                    <p class="block">The day is Monday, April 5th. Today I had to drive back to San Diego from Palm Desert, so as
                         soon as I woke up around 9 or 10 A.M. I packed up and left. On the way home, I listened to a
                         song my girlfriend showed me a few days ago multiple times. The song is in a mix of Mandarin
                         and English, here is the song:
@@ -83,12 +97,14 @@
                     </p>
                 </details>
             </section>
-            <hr>
+            </div>
+            <div class="grid-item">
+            <hr style="height: 12px; border: 0; box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);">
             <section>
                 <details>
-                    <summary>Journal 3</summary>
-                    <h3 id="Journal3">Journal 3</h3>
-                    <p>On Tuesday, April 7th, I woke up and read more before my class, CSE 140, at 12:30 P.M. I also set
+                    <summary class="summaries">Journal 3</summary>
+                    <h3 class="headers" id="Journal3">Journal 3</h3>
+                    <p class="block">On Tuesday, April 7th, I woke up and read more before my class, CSE 140, at 12:30 P.M. I also set
                         up
                         my group Slack and introductions, etc. since I was chosen as a leader for group 5. Then I went
                         to class, taking notes as it went on. After class, I planned to get a haircut so I went and got
@@ -105,23 +121,23 @@
                     </p>
                 </details>
             </section>
+            </div>
         </div>
-        <hr>
+        <hr style="height: 12px; border: 0; box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);">
         <form>
-            <fieldset>
+            <fieldset class="poll">
                 <p>To make a new entry please fill out this form:</p>
+                <label for="goodday">Check this box if you had a good day.</label>
                 <input type="checkbox" id="goodday" name="goodday" value="good">
-                <label for="goodday">Did you have a good day?</label><br>
-                <p>Which day are you writing this entry on?</p>
+                Which day are you writing this entry on? <br>
+                <label for="current">Today.</label>
                 <input type="radio" id="current" name="date" value="today">
-                <label for="current">Today.</label><br>
-                <input type="radio" id="future" name="date" value="future">
-                <label for="future">After the current day.</label><br>
+                <label for="future">After the current day.</label> <input type="radio" id="future" name="date" value="future">
                 <label for="entry">Please enter where you are writing this entry from:</label>
                 <input type="text" id="entry" name="entry"><br>
                 <label for="calendar">Today's date:</label>
                 <input type="date" id="calendar" name="calendar"><br>
-                <label for="new">Write your new entry here:</label><br>
+                <label for="new">Write your new entry here:</label>
                 <textarea id="new" name="new" rows="10" cols="150">
 Type your entry.
                 </textarea>
@@ -146,6 +162,7 @@ Type your entry.
                 <option value="slaughterhouse-five">Slaughterhouse Five</option>
                 </select>
                 <br>
+                <p class="appearance">You appear to be on a screen larger than 600 px wide, so feel free to click the button.</p>
                 <button type="button">Click to release stress.</button>
                 <br>
                 <input type="submit">
@@ -153,6 +170,7 @@ Type your entry.
         </form>
         <footer>Thank you for your journal submission.</footer>
     </main>
+</div>
 </body>
 
 </html>
