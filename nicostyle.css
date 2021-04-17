@@ -1,0 +1,99 @@
+@font-face {
+    font-family: downloaded;
+    src: url(OrelegaOne-Regular.ttf);
+  }
+
+body {
+    background-color: #CFF6F6;
+    /* Chose a light blue background for the page */
+}
+
+header {
+    font-size: 5em;
+    font-family: "Apple Chancery", cursive;
+    /* Adding some style to the header */
+}
+
+footer {
+    font-size: 2em;
+    font-family: "OrelegaOne-Regular", downloaded;
+}
+
+.headers {
+    font-size: 2em;
+    font-family: "Apple Chancery", cursive;
+    /* For individual Journal headers */
+}
+
+.summaries {
+    font-size: 1.5em;
+    font-family: "Apple Chancery", cursive;
+    /* For summary buttons */
+}
+
+.classlist {
+    color: hsl(312, 94%, 53%);
+    text-decoration: orange wavy underline;
+    text-align: left;
+    /* Styling class list in Journal 1 */
+}
+
+.block {
+    margin-bottom: 10px;
+    margin: 10 px;
+    margin: auto;
+    padding-bottom:3mm;
+    padding:2px;
+    padding: auto;
+    border-style: double;
+    border-color: burlywood;
+    border-width: 2px;
+    border-radius: 2px;
+
+    /* Adding block style for paragraphs of journal entries */
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Use for centering images, etc. */
+  }
+
+  button:hover {
+    color: goldenrod;
+  }
+
+  button:active {
+      color: purple;
+  }
+
+  .poll {
+      display: flex;
+      border-color: pink;
+      border-style: solid;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      flex-basis:0;
+      align-items:center;
+  }
+
+  .grid-container {
+      display: grid;
+      grid-template-rows: auto auto auto;
+      padding: 10px;
+      row-gap: 5px;
+      justify-items: start;
+  }
+
+  .gridcontainer > grid-item {
+      display: inline;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .appearance {
+        display: inline;
+    
+    }
+  }
