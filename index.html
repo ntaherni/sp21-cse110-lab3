@@ -12,7 +12,7 @@
 </head>
 <body>
     <style>
-            p {
+            div, p {
                 font-family: "Apple Chancery", cursive;
             }
             p.none {display: none};
@@ -33,15 +33,29 @@
             <section>
                 <details>
                     <summary class="summaries">Journal 1</summary>
+                    <style>
+                        h1 + p {
+                            margin-bottom: 10px;
+                            margin: 10 px;
+                            margin: auto;
+                            padding-bottom:3mm;
+                            padding:2px;
+                            padding: auto;
+                            border-style: double;
+                            border-color: palevioletred;
+                            border-width: 2px;
+                            border-radius: 2px;
+                        }
+                    </style>
                     <h1 class="headers" id="Journal1">Journal 1</h1>
-                    <p class="block">The day is Sunday, April 4th. Today is Easter. I woke up around 9 in the
+                    <p>The day is Sunday, April 4th. Today is Easter. I woke up around 9 in the
                         morning and proceeded to do some <em>homework for one of my classes</em>, I forget
                         exactly which class, but I remember <strong>doing the work</strong>. I also read a book,
                         <i>The Colorless Tsukuru Tazaki and His Years of Pilgrimage</i> by <b>Haruki Murakami</b>,
                         one of my favorite authors.<br>
                         </p>
                         <img src="https://images-na.ssl-images-amazon.com/images/I/81++DiPFJ1L.jpg" alt="Book cover"
-                            class="center" style="width:50%; height:50%; max-width:500px; max-height:800px;">
+                            class="img" style="width:50%; height:50%; max-width:500px; max-height:800px;">
                         <br>
                         <p class="inline">
                         If you have any interest in getting the book you can find it <a
@@ -129,10 +143,10 @@
                 <p>To make a new entry please fill out this form:</p>
                 <label for="goodday">Check this box if you had a good day.</label>
                 <input type="checkbox" id="goodday" name="goodday" value="good">
-                Which day are you writing this entry on? <br>
+                <p>Which day are you writing this entry on?</p>
                 <label for="current">Today.</label>
                 <input type="radio" id="current" name="date" value="today">
-                <label for="future">After the current day.</label> <input type="radio" id="future" name="date" value="future">
+                <label for="future">After the entry date.</label> <input type="radio" id="future" name="date" value="future">
                 <label for="entry">Please enter where you are writing this entry from:</label>
                 <input type="text" id="entry" name="entry"><br>
                 <label for="calendar">Today's date:</label>
