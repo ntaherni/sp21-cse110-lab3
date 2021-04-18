@@ -4,7 +4,7 @@
     /* Adding downloaded font */
   }
 
-body {
+* {
     background-color: #CFF6F6;
     /* Chose a light blue background for the page */
 }
@@ -15,12 +15,16 @@ header {
     /* Adding some style to the header */
 }
 
+#cursive {
+    color: darkgray;
+}
+
 footer {
     font-size: 2em;
     font-family: "OrelegaOne-Regular", downloaded;
 }
 
-.headers {
+[class|="headers"] {
     font-size: 2em;
     font-family: "Apple Chancery", cursive;
     /* For individual Journal headers */
@@ -39,7 +43,7 @@ footer {
     /* Styling class list in Journal 1 */
 }
 
-.block {
+p.block {
     margin-bottom: 10px;
     margin: 10 px;
     margin: auto;
@@ -54,7 +58,7 @@ footer {
     /* Adding block style for paragraphs of journal entries */
 }
 
-.center {
+p ~ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -81,6 +85,10 @@ footer {
       flex-basis:0;
       align-items:center;
       /* Added flex box for form at bottom */
+  }
+
+  .poll label {
+    font-family: "Apple Chancery", cursive;
   }
 
   .grid-container {
